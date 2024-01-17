@@ -33,25 +33,25 @@
         <h1>Dispensationsgesuch</h1>
     </header>
     <main>
-        <form id="form">
+        <form id="form" autocomplete="off">
             <ol>
                 <li>
                     <label for="vorname">Vorname</label>
-                    <input type="text" id="vorname" name="vorname" required>
+                    <input autocomplete="off" type="text" id="vorname" name="vorname" required>
                 </li>
                 <li>
                     <label for="nachname">Nachname</label>
-                    <input type="text" id="nachname" name="nachname" required>
+                    <input autocomplete="off" type="text" id="nachname" name="nachname" required>
                 </li>
             </ol>
             <ol>
                 <li>
                     <label for="email">E-Mail (musterm@bzz.ch)</label>
-                    <input type="email" id="email" name="email" pattern="^[a-zA-Z]+@bzz\.ch$" required>
+                    <input autocomplete="off" type="email" id="email" name="email" pattern="^[a-zA-Z]+@bzz\.ch$" required>
                 </li>
                 <li>
                     <label for="telefon">Telefon (+49791234567)</label>
-                    <input type="tel" id="telefon" name="telefon" required pattern="\+[0-9]{11}">
+                    <input autocomplete="off" type="tel" id="telefon" name="telefon" required pattern="\+[0-9]{11}">
                 </li>
             </ol>
             <ol>
@@ -93,11 +93,11 @@
             <ol>
                 <li>
                     <label for="von">Abwesenheit von:</label>
-                    <input type="date" id="von" name="von" required>
+                    <input autocomplete="off" type="date" id="von" name="von" required>
                 </li>
                 <li>
                     <label for="bis">Abwesenheit bis:</label>
-                    <input type="date" id="bis" name="bis" required>
+                    <input autocomplete="off" type="date" id="bis" name="bis" required>
                 </li>
             </ol>
             <ol>
@@ -107,13 +107,13 @@
                 </li>
                 <li>
                     <label for="anzahl">Anzahl betroffener Lektionen</label>
-                    <input type="number" id="anzahl" name="anzahl" required>
+                    <input autocomplete="off" type="number" id="anzahl" name="anzahl" required>
                 </li>
                 <li>
                     <label for="lehrpersonen">Betroffene Lehrpersonen</label>
                     <div id="searchlp">
                         <div>
-                            <input id="lehrpersonen" name="lehrpersonen" type="text">
+                            <input autocomplete="off" id="lehrpersonen" name="lehrpersonen" type="text">
                         </div>
                         <ol id="dropdown">
                             <li>
@@ -136,16 +136,16 @@
                 </li>
                 <li>
                     <label for="beilagen">Beilagen</label>
-                    <input type="file" id="beilagen" name="beilagen" multiple>
+                    <input autocomplete="off" type="file" id="beilagen" name="beilagen" multiple>
                 </li>
                 <li>
                     <label for="checkbox">Ich bestätige, dass die folgenden Voraussetzungen fürs Einreichen des Gesuchs erfüllt sind:</label>
                     <div class="checkbox">
-                        <input type="checkbox" id="checkbox1" name="checkbox1" required>
+                        <input autocomplete="off" type="checkbox" id="checkbox1" name="checkbox1" required>
                         <label for="checkbox1">Der Lehrbetrieb ist informiert und einverstanden.</label>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" id="checkbox2" name="checkbox2">
+                        <input autocomplete="off" type="checkbox" id="checkbox2" name="checkbox2">
                         <label for="checkbox2">Bei Minderjährigen: Inhaber der Elterlichen Sorge sind informiert und einverstanden.</label>
                     </div>
                 </li>
