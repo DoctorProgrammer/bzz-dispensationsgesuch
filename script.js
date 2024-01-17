@@ -14,7 +14,7 @@ input.addEventListener("blur", function () {
     // timeout for 0.1 seconds, so that the user can click on the li element before it disappears
     setTimeout(function () {
         list.style.zIndex = "-1";
-    }, 50);
+    }, 100);
 });
 
 input.addEventListener("keyup", function () {
